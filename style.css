@@ -1,0 +1,76 @@
+
+nav {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    gap: 10%;
+    border: 5px solid #c7c7c7;
+    border-radius: 15px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.card {
+    flex: 0 0 250px;
+    height: 80%;
+    border: 4px solid rgb(130, 119, 34);
+    margin: auto 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    scroll-snap-align: center;
+    transition: all .5s ease;
+}
+.card:first-child {
+    margin-left: calc(50% - 125px);
+}
+.card:last-child {
+    margin-right: calc(50% - 125px);
+}
+.pic-holder {
+    flex: 1.5;
+    width: 100%;
+}
+.html {
+    background:
+    url("./LOGO_HTML_512x512.png") no-repeat 50% 50% / 80%,
+    rgb(72, 71, 71);
+}
+.css {
+    background:
+    url("./LOGO_CSS_512x605.png") no-repeat 50% 50% / 70%,
+    rgb(72, 71, 71);
+}
+.js {
+    background:
+    url("./LOGO_JS_372x378.png") no-repeat 50% 50% / 80%,
+    rgb(72, 71, 71);
+}
+.vue {
+    background:
+    url("./LOGO_VUE_593x512.png") no-repeat 50% 50% / 80%,
+    rgb(72, 71, 71);
+}
+.python {
+    background:
+    url("./LOGO_PYTHON_514x512.png") no-repeat 50% 50% / 80%,
+    rgb(72, 71, 71);
+}
+h3 {
+    width: 100%;
+}
+.desc {
+    width: 100%;
+    border-top: 3px solid rgb(130, 119, 34);
+    flex: 1;
+    background-color: #333;
+    box-shadow: 0 0 10px 1px #c7c7c7 inset;
+    color: #c7c7c7;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
